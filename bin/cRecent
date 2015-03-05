@@ -1,0 +1,16 @@
+ #!/bin/bash
+   #Creates a MPD playlist of recently added songs.
+   date_today="Jan 29"
+   echo "$(grep added /home/rei/.config/mpd/log | \
+   grep "$date_today" | \
+   awk -F "added " '{print $2}')" >> ~/.config/mpd/playlists/ClassicalCollection.m3u
+   if [ $? -eq 0 ]
+   then
+   echo "successfully parsed"
+  sort -u -o ~/.config/mpd/playlists/ClassicalCollection.m3u ~/.config/mpd/playlists/ClassicalCollection.m3u
+  echo "duplicates removed"
+  echo "successfully added to ~/MPDPlaylist/RecentlyAdded.m3u"
+  else
+  echo "problem parsing mpd.log"
+  fi
+

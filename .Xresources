@@ -1,0 +1,54 @@
+background:           #000000
+foreground:           #1FD8FF
+*cursorColor:          #6699CC
+
+
+!Visiblue
+
+!black
+URxvt*color0:               #333366
+URxvt*color8:               #333399
+!red
+URxvt*color1:               #6666CC
+URxvt*color9:               #9999FF
+!green
+URxvt*color2:               #0099CC
+URxvt*color10:              #00CCFF
+!yellow
+URxvt*color3:               #3366CC
+URxvt*color11:              #6699FF
+!blue
+URxvt*color4:               #006699
+URxvt*color12:              #0099CC
+!magneta
+URxvt*color5:               #0066FF
+URxvt*color13:              #0099FF
+!cyan
+URxvt*color6:               #669999
+URxvt*color14:              #66CCCC
+!white
+URxvt*color7:		   #B8D6FF
+URxvt*color15:             #B8EDFF
+
+backarrowKeyIsErase: true
+locale: true
+selectToClipboard:true
+xterm*bellIsUrgent: true  
+
+URxvt*font: xft:monaco:size=8 
+URxvt.perl-ext-common: vtwheel 
+!# URxvt.tabbed.tabbar-fg: 5 
+!# URxvt.tabbed.tabbar-bg: 0
+! URxvt.tabbed.tab-fg: 14
+!  URxvt.tabbed.tab-bg: 0
+  
+URxvt.scrollBar: false
+  URxvt.letterSpace: 0
+  
+  Xcursor.size : 16
+
+ URxvt*.transparent: true 
+! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
+ URxvt*.shading: 11 
+!URxvt*tintColor: Blue
+URxvt*.depth: 16

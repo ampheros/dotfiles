@@ -1,0 +1,18 @@
+#!/bin/bash
+
+
+function wallP(){
+h=`date +%H`
+if [ $h -gt 08 -a $h -lt 18 ]; then
+	dayWall &
+else
+	nightWall &
+
+fi
+}
+
+while true
+do 
+wallP
+sleep 2h
+done

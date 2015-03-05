@@ -1,0 +1,3 @@
+#!/bin/sh
+. "/home/rei/builds/MPD_sima-0.13.1/venv/bin/activate"
+"/home/rei/builds/MPD_sima-0.13.1/venv/bin/mpd-sima" "$@"
