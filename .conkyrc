@@ -1,9 +1,0 @@
-background no
-no_buffers yes
-out_to_console yes
-update_interval 0.25
-
-TEXT
-
-DownSpeed: ${downspeed enp3s0} \
-UPspeed: ${upspeed enp3s0} \
