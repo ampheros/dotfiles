@@ -1,0 +1,34 @@
+#! /bin/sh
+
+bspc config border_width        2
+bspc config window_gap         35
+bspc config focused_border_color "#0099FF"
+bspc config split_ratio         0.52
+bspc config borderless_monocle  true
+bspc config gapless_monocle     true
+bspc config focus_by_distance   true
+bspc config focus_follows_pointer true
+bspc config top_padding 15
+
+bspc monitor HDMI-0 -n 1 -d V VI VII
+
+bspc monitor DVI-0 -n 0 -d I II III IV
+
+bspc monitor DVI-0 -f ^0
+
+bspc rule -a Gimp desktop=^8 follow=on floating=on
+bspc rule -a Chromium desktop=^2
+bspc rule -a mplayer2 floating=on
+bspc rule -a plugin-container floating=on
+bspc rule -a Pcsx2 floating=on
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+bspc rule -a dzen monitor=DVI-0 desktop=4
+bspc rule -a scratchpad sticky=on floating=on
+bspc rule -a playonlinux floating=on
+
+bspc control --subscribe > "$BSPWM_FIFO" &
+
+xdotool key super+4 &
+#dynamic_gaps.sh &
+bsmpd.new.sh
