@@ -1,0 +1,67 @@
+unbind-key -a
+set -g default-terminal "screen-256color"
+
+set -g prefix C-z
+unbind C-b
+bind C-z send-prefix
+
+#urxvt tab like window switching (-n: no prior escape seq)
+bind -n C-n new-window
+bind -n C-p next
+bind -n C-o prev
+#bind -n C-left swap-window -t 0
+#bind -n C-right swap-window -t +1
+
+#pane navigation
+bind -n C-j select-pane -D
+bind -n C-k select-pane -U
+bind -n C-h select-pane -L
+bind -n C-l select-pane -R
+
+bind-key | split-window -h
+bind-key - split-window -v
+bind-key & confirm-before -p "kill-window #W? (y/n)" kill-window
+
+
+#bind-key          0 select-window -t :0
+#bind-key          1 select-window -t :1
+#bind-key          2 select-window -t :2
+#bind-key          3 select-window -t :3
+#bind-key          4 select-window -t :4
+#bind-key          5 select-window -t :5
+#bind-key          6 select-window -t :6
+#bind-key          7 select-window -t :7
+#bind-key          8 select-window -t :8
+#bind-key          9 select-window -t :9
+bind-key          : command-prompt
+bind-key          ? list-keys
+bind-key          [ copy-mode
+bind-key          ] paste-buffer
+bind-key          d detach-client
+#bind-key          o select-pane -t :.+
+bind-key          x confirm-before -p "kill-pane #P? (y/n)" kill-pane
+#bind-key          { swap-pane -U
+#bind-key          } swap-pane -D
+#bind-key          ~ show-messages
+#bind-key      PPage copy-mode -u
+
+#bind-key -r    M-Up resize-pane -U 5
+#bind-key -r  M-Down resize-pane -D 5
+#bind-key -r  M-Left resize-pane -L 5
+#bind-key -r M-Right resize-pane -R 5
+bind-key -r    C-Up resize-pane -U
+bind-key -r  C-Down resize-pane -D
+bind-key -r  C-Left resize-pane -L
+bind-key -n  C-Left swap-window -t 0
+bind-key -r C-Right resize-pane -R
+bind-key -n C-Right swap-window -t +1
+
+#status bar:
+ # status line
+set-option -g status-utf8 on
+set-option -g status-justify left
+set-option -g status-bg default
+set-option -g status-fg green
+set-window-option -g window-status-current-fg white
+set-window-option -g window-status-current-attr underscore
+set-option -g status-right '#H #[fg=colour]%I:%M #[fg=colour14]%d.%m.%Y'
