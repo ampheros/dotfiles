@@ -1,0 +1,3 @@
+#PlayOnLinux\'s\ virtual\ drives/aioN/drive_c/Program\ Files/NCSoft/Aion/bin32
+
+optirun wine /home/ampheros/PlayOnLinux\'s\ virtual\ drives/aioN/drive_c/Program\ Files/NCSoft/Aion/bin32/AION.bin -ip:64.25.35.103 -port:2106 -cc:1 -noauthgg -charnamemenu -f2p -webshopevent:0 -loginex -pwd16 -nosatab -fmd -noweb
