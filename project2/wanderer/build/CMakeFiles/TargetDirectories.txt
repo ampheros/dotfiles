@@ -1,0 +1,16 @@
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/clean_test_results.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/doxygen.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/gtest/CMakeFiles/gtest.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/gtest/CMakeFiles/gtest_main.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/roscpp_generate_messages_cpp.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/roscpp_generate_messages_lisp.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/roscpp_generate_messages_py.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/rosgraph_msgs_generate_messages_cpp.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/rosgraph_msgs_generate_messages_lisp.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/rosgraph_msgs_generate_messages_py.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/run_tests.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/std_msgs_generate_messages_cpp.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/std_msgs_generate_messages_lisp.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/std_msgs_generate_messages_py.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/tests.dir
+/nfs/home/eduardon/cs135/project2/wanderer/build/CMakeFiles/wanderer_node.dir

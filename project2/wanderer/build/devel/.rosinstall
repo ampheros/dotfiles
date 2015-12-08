@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /nfs/home/eduardon/cs135/project2/wanderer/build/devel/setup.sh
