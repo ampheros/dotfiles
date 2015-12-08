@@ -35,35 +35,35 @@
 
 
 
-#Raise Volumej
-"amixer set Master 5%+"
+#Raise Volumecde
+"pulseaudio-ctl up"
     m:0x0 + c:123
     XF86AudioRaiseVolume 
 
 #Lower Volume
-"amixer set Master 5%-"
+"pulseaudio-ctl down"
     m:0x0 + c:122
     XF86AudioLowerVolume 
 
 #Mute
-"amixer set Master toggle"
+"pulseaudio-ctl mute-toggle"
     m:0x0 + c:121
     XF86AudioMute 
 
 #NExt
 "mpc next"
-    m:0x0 + c:174
-    XF86AudioStop 
+    m:0x0 + c:171
+    XF86AudioNext 
 
 #Previous
 "mpc prev"
-    m:0x0 + c:172
-    XF86AudioPlay 
+    m:0x0 + c:173
+    XF86AudioPrev 
 
 #Pause
 "mpc toggle"
-    m:0x0 + c:173
-    XF86AudioPrev 
+    m:0x0 + c:215
+    XF86AudioPlay 
 
 #browser
 "firefox"
@@ -71,17 +71,17 @@
     Alt + w 
 
 #music
-"st -e ncmpcpp"
+"urxvt -e ncmpcpp"
     m:0x8 + c:58
     Alt + m 
 
 #terminal
-"st -e tmux"
+"urxvt"
     m:0x8 + c:28
     Alt + t 
 
 #File
-"st -e ranger"
+"urxvt -e ranger"
     m:0x48 + c:40
     Alt+Mod4 + d 
 
@@ -152,38 +152,38 @@
 
 #move win left
 "movewinLeft.sh"
-    m:0xd0 + c:43
-    Mod2+Mod4+Mod5 + h 
+    m:0xc + c:43
+    Control+Alt + h 
 
 #move win Right
 "movewinRight.sh"
-    m:0xd0 + c:46
-    Mod2+Mod4+Mod5 + l 
+    m:0xc + c:46
+    Control+Alt + l 
 
 #movewinUp
 "movewinUp.sh"
-    m:0xd0 + c:45
-    Mod2+Mod4+Mod5 + k 
+    m:0xc + c:45
+    Control+Alt + k 
 
 #move win Down
 "movewinDown.sh"
-    m:0xd0 + c:44
-    Mod2+Mod4+Mod5 + j 
+    m:0xc + c:44
+    Control+Alt + j 
 
 #decrease win width
 "winsizeLeft.sh"
-    m:0xd1 + c:43
-    Shift+Mod2+Mod4+Mod5 + h 
+    m:0x4 + c:43
+    Control + h 
 
 #Increase win height
 "winsizeDown.sh"
-    m:0xd1 + c:45
-    Shift+Mod2+Mod4+Mod5 + k 
+    m:0x4 + c:45
+    Control + k 
 
 #Decrease win height
 "winsizeUp.sh"
-    m:0xd1 + c:44
-    Shift+Mod2+Mod4+Mod5 + j 
+    m:0x4 + c:44
+    Control + j 
 
 #blank window
 "urxvt -shading 100 -title 'pseudoframe' -name 'pseudoframe' -e sh -c 'tput civis; sleep 365d'"
@@ -192,8 +192,8 @@
 
 #increase win width
 "winsizeRight.sh"
-    m:0xc1 + c:46
-    Shift+Mod4+Mod5 + l 
+    m:0x4 + c:46
+    Control + l 
 
 #
 # End of xbindkeys configuration
