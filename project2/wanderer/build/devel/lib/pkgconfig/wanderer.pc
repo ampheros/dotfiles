@@ -1,8 +1,0 @@
-prefix=/nfs/home/eduardon/cs135/project2/wanderer/build/devel
-
-Name: wanderer
-Description: Description of wanderer
-Version: 0.0.0
-Cflags: 
-Libs: -L/nfs/home/eduardon/cs135/project2/wanderer/build/devel/lib 
-Requires: 

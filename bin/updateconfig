@@ -1,0 +1,14 @@
+#/bin/bash
+
+cp -f -v ~/git/dotfiles/.bashrc ~/.bashrc
+cp -f -v ~/git/dotfiles/.tmux.conf ~/.tmux.conf
+cp -f -v ~/git/dotfiles/.vimrc ~/.vimrc
+cp -f -v ~/git/dotfiles/.xbindkeysrc ~/.xbindkeysrc
+cp -f -v ~/git/dotfiles/.xinitrc  ~/.xinitrc
+cp -f -v ~/git/dotfiles/.Xresources ~/.Xresources
+cp -f -v ~/git/dotfiles/.vimperatorrc ~/.vimperatorrc
+cp -f -v ~/git/dotfiles/.conkyrc ~/.conkyrc
+cp -r -f -v ~/git/dotfiles/bin/ ~/
+cp -r -f -v ~/git/dotfiles/.config/ ~/
+
+

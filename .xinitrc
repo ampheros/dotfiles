@@ -1,11 +1,12 @@
-sh ~/.screenlayout/dualMonitors.sh &
+sh ~/.screenlayout/3screens.sh &
 udiskie &
-
+mouseserver &
 xbindkeys &
 xrdb -load ~/.Xresources &
 mpd &
 xsetroot -cursor_name left_ptr &
 wallpaper &
+#feh --bg-center ~/Pictures/Wallpaper/blackandblue.png --bg-scale ~/Pictures/Wallpaper/citylights.jpg --bg-scale ~/Pictures/Wallpaper/Day/waterfall.jpg &
 redshift -l 39.517549:-119.858093 &
 compton --config ~/.config/compton.conf -b &
 #songupdate.sh &
@@ -22,6 +23,6 @@ mkfifo "$BSPWM_FIFO"
 exec bspwm -s "$BSPWM_FIFO"
 
 #2bwm 
-
+#exec i3 --force-xinerama
 #exec xmonad
 

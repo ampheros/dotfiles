@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #using the path WALLPAPERS will select a new random wallpaper
-WALLPAPERS="/home/rei/Pictures/Wallpaper/Day"
+WALLPAPERS="/home/nava/Pictures/Wallpaper/Day"
 RANGE=$(ls $WALLPAPERS | wc -l)
 
 for i in 2; do

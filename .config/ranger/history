@@ -1,0 +1,50 @@
+shell l
+shell 
+shell mkdir DealeyPlaza
+search mnt
+open_with
+search ranger
+del
+open_with cvlc
+open_with 1
+open_with 
+open_with evince
+shell zip ZulysBooks.zip 
+shell mkdir Books
+rename [Ronald_J._Comer]_Abnormal_Psychology.pdf
+rename Gilles_Deleuze_Desert_Islands_and_Other_Texts_1953-1974_Semiotexte___Foreign_Agents__2004.pdf
+rename [Frederic_Gros,_John_Howe]_A_Philosophy_of_Walking.epub
+rename [Joanne_Harris]_Chocolat.epub
+rename [Simone_de_Beauvoir]_The_ethics_of_ambiguity.pdf
+rename [Thoreau_Henry_David]_Henry_David_Thoreau-Civil_Di.pdf
+rename [Joanne_Harris]_Chocolat.pdf
+shell zip ZulysBooks.zip Books
+shell zip ZulysBooks.zip Books/*
+search usr
+search share
+search 
+search vlc
+search hosts
+shell vim .hosts
+search .hosts
+shell mkdir uniq
+search how
+open_with vlc
+search run
+search med
+shell mkdir tmp
+shell sudo umount %s
+search meet
+shell mkdir test
+shell sudo chmod %s 777
+rename 
+search School
+search qute
+search doxygen
+shell make pdf
+rename PA03_DOXY_NavaEduardo.pdf
+open_with vim
+shell mkdir mnt
+search mad
+open_with mpv
+delete

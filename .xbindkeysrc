@@ -36,17 +36,17 @@
 
 
 #Raise Volumecde
-"pulseaudio-ctl up"
+"amixer -c 2 set 'PCM' 5%+"
     m:0x0 + c:123
     XF86AudioRaiseVolume 
 
 #Lower Volume
-"pulseaudio-ctl down"
+"amixer -c 2 set 'PCM' 5%-"
     m:0x0 + c:122
     XF86AudioLowerVolume 
 
 #Mute
-"pulseaudio-ctl mute-toggle"
+"amixer -c 2 set 'PCM' toggle"
     m:0x0 + c:121
     XF86AudioMute 
 
@@ -62,11 +62,11 @@
 
 #Pause
 "mpc toggle"
-    m:0x0 + c:215
+    m:0x0 + c:172
     XF86AudioPlay 
 
 #browser
-"firefox"
+"qutebrowser"
     m:0x8 + c:25
     Alt + w 
 
@@ -75,20 +75,10 @@
     m:0x8 + c:58
     Alt + m 
 
-#terminal
-"urxvt"
-    m:0x8 + c:28
-    Alt + t 
-
 #File
 "urxvt -e ranger"
     m:0x48 + c:40
     Alt+Mod4 + d 
-
-#sublime
-"subl"
-    m:0x8 + c:46
-    Alt + l 
 
 #F1
 "sleep 0.5s && xte 'key F1'"
@@ -152,48 +142,62 @@
 
 #move win left
 "movewinLeft.sh"
-    m:0xc + c:43
-    Control+Alt + h 
+    Alt + h
+    #move win Right 
 
-#move win Right
 "movewinRight.sh"
-    m:0xc + c:46
-    Control+Alt + l 
+   Alt + l
 
 #movewinUp
 "movewinUp.sh"
-    m:0xc + c:45
-    Control+Alt + k 
+   Alt + k
 
 #move win Down
 "movewinDown.sh"
-    m:0xc + c:44
-    Control+Alt + j 
+   Alt + j
 
 #decrease win width
 "winsizeLeft.sh"
-    m:0x4 + c:43
-    Control + h 
+   Control + Alt + h
 
 #Increase win height
 "winsizeDown.sh"
-    m:0x4 + c:45
-    Control + k 
+   Control + ALt + k
 
 #Decrease win height
 "winsizeUp.sh"
-    m:0x4 + c:44
-    Control + j 
-
-#blank window
-"urxvt -shading 100 -title 'pseudoframe' -name 'pseudoframe' -e sh -c 'tput civis; sleep 365d'"
-    m:0x18 + c:51
-    Alt+Mod2 + backslash 
+   Control + Alt + j
 
 #increase win width
 "winsizeRight.sh"
-    m:0x4 + c:46
-    Control + l 
+   Control + Alt + l
+
+#blank window
+"urxvt -shading 100 -title 'pseudoframe' -name 'pseudoframe' -e sh -c 'tput civis; sleep 365d'"
+   Alt+Mod2 + backslash
+
+#mouse movement
+"sh ~/bin/moveMousefast.sh up"
+    Mod4 + Up
+    "sh ~/bin/moveMousefast.sh down" 
+
+#od4 + Down
+"sh ~/bin/moveMousefast.sh left"
+    Mod4 + Left
+    "sh ~/bin/moveMousefast.sh right" 
+
+"sh ~/bin/moveMouse.sh up"
+    Mod4 + Shift + Up
+    "sh ~/bin/moveMouse.sh down" 
+
+#od4 + Shift + Down
+"sh ~/bin/moveMouse.sh left"
+    Mod4 + Shift + Left
+    "sh ~/bin/moveMouse.sh right" 
+
+"xdotool click 1"
+    Mod4 + n
+    "sh ~/bin/moveMouse.sh right" 
 
 #
 # End of xbindkeys configuration

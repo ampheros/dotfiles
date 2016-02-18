@@ -1,54 +1,55 @@
-URxvt*background:           #000000
-URxvt*coreground:           #1FD8FF
-URxvt*cursorColor:          #6699CC
+*background:           #000000
+*foreground:           #1FD8FF
+*cursorColor:          #6699CC
 
 
 !Visiblue
 
 !black
-URxvt*color0:               #333366
-URxvt*color8:               #97BEE6
+*color0:               #959595
+*color8:               #97BEE6
 !red
-URxvt*color1:               #6666CC
-URxvt*color9:               #9999FF
+*color1:               #6666CC
+*color9:               #9999FF
 !green
-URxvt*color2:               #0099CC
-URxvt*color10:              #00CCFF
+*color2:               #0099CC
+*color10:              #00CCFF
 !yellow
-URxvt*color3:               #3366CC
-URxvt*color11:              #6699FF
+*color3:               #3366CC
+*color11:              #6699FF
 !blue
-URxvt*color4:               #006699
-URxvt*color12:              #0099CC
+*color4:               #006699
+*color12:              #0099CC
 !magneta
-URxvt*color5:               #0066FF
-URxvt*color13:              #0099FF
+*color5:               #0066FF
+*color13:              #0099FF
 !cyan
-URxvt*color6:               #669999
-URxvt*color14:              #66CCCC
+*color6:               #669999
+*color14:              #66CCCC
 !white
-URxvt*color7:		   #B8D6FF
-URxvt*color15:             #B8EDFF
+*color7:		#B8D6FF
+*color15:             #B8EDFF
 
 backarrowKeyIsErase: true
 locale: true
 selectToClipboard:true
 xterm*bellIsUrgent: true  
 
-URxvt*font: xft:monaco:size=8 
-URxvt.perl-ext-common: vtwheel 
-!# URxvt.tabbed.tabbar-fg: 5 
-!# URxvt.tabbed.tabbar-bg: 0
-! URxvt.tabbed.tab-fg: 14
-!  URxvt.tabbed.tab-bg: 0
+*font: xft:monaco:size=14 
+!.perl-ext-common: vtwheel 
+!# .tabbed.tabbar-fg: 5 
+!# .tabbed.tabbar-bg: 0
+! .tabbed.tab-fg: 14
+!  .tabbed.tab-bg: 0
   
 URxvt.scrollBar: false
-URxvt.letterSpace: 0
+Xcursor.size: 8
+!.letterSpace: 0
   
-  Xcursor.size : 16
+!  Xcursor.size : 8
 
-! URxvt*.transparent: true 
-! URxvt*.shading: 0 to 99 darkens, 101 to 200 lightens
-! URxvt*.shading: 11 
-!URxvt*tintColor: Blue
-URxvt*.depth: 64
+! *.transparent: true 
+! *.shading: 0 to 99 darkens, 101 to 200 lightens
+! *.shading: 11 
+!*tintColor: Blue
+!*.depth: 16
